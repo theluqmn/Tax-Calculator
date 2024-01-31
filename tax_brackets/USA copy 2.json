@@ -1,0 +1,50 @@
+{
+    "standard-version":0,
+    "name": "US tax bracket (single-filers)",
+    "country": "USA",
+    "updated": 2021,
+    "tiers": [
+        {
+            "tier":1,
+            "rate":10,
+            "min":0,
+            "max":9875
+        },
+        {
+            "tier":2,
+            "rate":12,
+            "min":9876,
+            "max":40125
+        },
+        {
+            "tier":3,
+            "rate":22,
+            "min":40126,
+            "max":85525
+        },
+        {
+            "tier":4,
+            "rate":24,
+            "min":85526,
+            "max":163300
+        },
+        {
+            "tier":5,
+            "rate":32,
+            "min":163301,
+            "max":207350
+        },
+        {
+            "tier":6,
+            "rate":35,
+            "min":207351,
+            "max":518400
+        },
+        {
+            "tier":7,
+            "rate":37,
+            "min":518401,
+            "max":0
+        }
+    ]
+}
