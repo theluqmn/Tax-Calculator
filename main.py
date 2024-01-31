@@ -1,11 +1,20 @@
-from scripts import clear, load
-import json
+from scripts import load, tools
+import time
 
-tax_bracket = None #Loading tax bracket json
-with open("tax_bracket.json") as json_file:
-    tax_bracket = json.load(json_file)
+tools.Clear()
+# Loading all the brackets
+list = load.find_brackets()
+for item in list:
+    details = load.open_bracket(item)
+    name = details["name"]
+    country = details["country"]
+    print(f"ID: {item} || Bracket: {name} | country: {country} | tiers: {len(details['tiers'])}")
 
-clear.Clear()
+bracket = input("Enter ID of bracket")
+
+time.sleep(5)
+
+tools.Clear()
 tax = 0
 salary = int(input("Enter your salary (yearly): "))
 carry = salary #For calculatiosn above bracket 1

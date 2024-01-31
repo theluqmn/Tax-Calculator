@@ -12,5 +12,7 @@ def find_brackets():
 
     return tax_brackets
 
-def lookup_bracket(file):
-    with open(f"{os.getcwd}/./")
+def open_bracket(file):
+    with open(f"{os.getcwd()}/./tax_brackets/{file}") as json_file:
+        opened = json.load(json_file)
+        return opened
