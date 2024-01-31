@@ -1,5 +1,9 @@
 {
-    "single":[
+    "standard-version":1,
+    "name": "US tax bracket (single-filers)",
+    "country": "USA",
+    "updated": 2021,
+    "tiers": [
         {
             "tier":1,
             "rate":10,

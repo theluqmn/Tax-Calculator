@@ -1,4 +1,4 @@
-from scripts import clear
+from scripts import clear, load
 import json
 
 tax_bracket = None #Loading tax bracket json
@@ -7,12 +7,11 @@ with open("tax_bracket.json") as json_file:
 
 clear.Clear()
 tax = 0
-married = input("Are you married? (y/n): ").lower() #Doesnt matter at the moment
 salary = int(input("Enter your salary (yearly): "))
 carry = salary #For calculatiosn above bracket 1
 
 if salary > 0:
-    for i in tax_bracket["single"]:
+    for i in tax_bracket["tiers"]:
         tax_tier = i["tier"]
         tax_rate = i["rate"]
         tax_min = i["min"] / 100
