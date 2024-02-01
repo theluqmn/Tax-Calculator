@@ -8,7 +8,7 @@ import json, os
 
 #Safety checks
 if "config.json" and "tax_brackets" and "scripts" not in os.listdir(): #Check if there is any missing files
-    print("Missing files, visit https://github.com/luqmanity/tax_calculator for source code.")
+    print("Missing files, visit https://github.com/luqmanity/taxed for source code.")
 
 else: #Checking for missing essential scripts
     if "load.py" and "tools.py" not in os.listdir("./scripts"): #Checks if any scripts are missing:
