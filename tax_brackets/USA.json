@@ -1,5 +1,5 @@
 {
-    "standard-version":1,
+    "format_version":1,
     "name": "US tax bracket (single-filers)",
     "country": "USA",
     "updated": 2021,

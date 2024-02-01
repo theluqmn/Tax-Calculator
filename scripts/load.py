@@ -10,9 +10,15 @@ def find_brackets():
         if file.endswith(".json"):
             tax_brackets.append(file)
 
-    return tax_brackets
+    if tax_brackets == []:
+        print("No tax brackets in folder")
+        return None
+    else:
+        return tax_brackets
 
 def open_bracket(file):
     with open(f"{os.getcwd()}/./tax_brackets/{file}") as json_file:
         opened = json.load(json_file)
         return opened
+    
+print(os.listdir())
