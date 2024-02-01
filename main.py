@@ -22,8 +22,8 @@ while True:
         print(f"ID: {item}")
         print(f"Bracket: {name} | Country: {country} | Tiers: {len(details['tiers'])}\n")
 
-        if version != config["standard-version"]:
-            print(f"[!] THIS BRACKET IS NOT ON THE SAME FORMAT VERSION. Current format version is {config['standard-version']}")
+        if version != config["format_version"]:
+            print(f"[!] THIS BRACKET IS NOT ON THE SAME FORMAT VERSION. Current format version is {config['format_version']}")
 
     #Select an ID
     selection = input("> Enter ID of bracket for calculation: ")
