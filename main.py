@@ -78,7 +78,7 @@ else: #Checking for missing essential scripts
                 if salary >= tax_min and salary < tax_max: #Within tax tier i
                     tax = carry * tax_rate
 
-                    print(f"You are in TIER {tax_tier}. Total tax due: {tax} (includes all previous tiers)\n")
+                    print(f"You are in TIER {tax_tier} (range: {tax_min} to {tax_max}). \nTotal tax due: {tax} (includes all previous tiers)\n")
                     break
 
                 else: #Not within this tax tier

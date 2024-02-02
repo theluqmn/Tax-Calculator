@@ -7,7 +7,11 @@ The USA bracket and several copies (for testing) is included by default, in the 
 First, this script lists down all available tax brackets. You will enter an ID for the tax bracket you would
 like to use for the calculation (eg: USA.json).
 
-Second, 
+Second, you will be instructed to input your **yearly** salary.
+
+Lastly, it will begin to calculate your tax. It loops through the different tax brackets until
+it locates the bracket that is within range of your salary. Once it successfully locates your bracket,
+it will output your total tax and what tier you belong in, and will mention the tier's salary range.
 
 Do note that this script is designed to have robust error-catching, whenever needed - such as checking
 for missing files/folders. This project is part of Project ChainLink, as an exercise for robust, scalable
