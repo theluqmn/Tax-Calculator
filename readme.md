@@ -4,7 +4,7 @@ This is a basic tax calculator designed for countries with progressive taxation 
 
 The USA bracket and several copies (for testing) is included by default, in the `/tax_brackets` folder.
 
-### How it works
+## How it works
 
 First, this script lists down all available tax brackets. You will enter an ID for the tax bracket you would
 like to use for the calculation (eg: USA.json).
