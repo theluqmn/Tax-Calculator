@@ -1,9 +1,11 @@
 # Tax Calculator
+
 This is a basic tax calculator designed for countries with progressive taxation (aka, taxes with brackets).
 
 The USA bracket and several copies (for testing) is included by default, in the `/tax_brackets` folder.
 
 ### How it works
+
 First, this script lists down all available tax brackets. You will enter an ID for the tax bracket you would
 like to use for the calculation (eg: USA.json).
 
@@ -22,11 +24,14 @@ since my absence - which lasted roughly four months.
 Special thanks to Hannah (US) for inspiring this project idea :D
 
 ## Tax Bracket JSON Format
+
 Currently, this code follows the version 1 format. It consists of a version, name, country and updated year key, followed
 by a list containing the tiers (each tier is a dictionary of its own).
 
 Each different bracket follows a JSON format that can be read by this code, and it is as follow:
-```
+
+```json
+
 {
     "format_version":1,
     "name": "US tax bracket (single-filers)",
@@ -48,12 +53,14 @@ Each different bracket follows a JSON format that can be read by this code, and 
     ]
 }
 ```
+
 You can add as much tiers as needed, according to your local tax laws. Each bracket is identified in the system through
 the file name (eg: USA.json) as the ID.
 
 Do note that the rate is in percentages (eg: 22 is 0.22x).
 
 ## Error Catching
+
 `/tax_brackets` and `/scripts`, including all of its contents, is required for this tool to function.
 `/tax_brackets` folder can be empty, and is checked for so when loading brackets. This will end up
 in the tool informing you of so and exiting. Other error catching is just basic things, hence not worth
