@@ -20,8 +20,8 @@ for missing files/folders. This project is part of Project ChainLink, as an exer
 and redundant software solutions. This is also the first actual working project I made this year, ever
 since my absence - which lasted roughly four months.
 
-**Code written 100% by Luqman Yazrie (MY)**.
-Special thanks to Hannah (US) for inspiring this project idea :D
+**Code written 100% by Luqman (MY)**.
+Special thanks to **Hannah (US) for helping out with this project idea :D
 
 ## Tax Bracket JSON Format
 
